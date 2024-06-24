@@ -15,4 +15,6 @@ def send_sms(to, message):
 if __name__ == "__main__":
     to = os.getenv('SMS_TO')
     message = os.getenv('SMS_MESSAGE')
+    print(f"Sending SMS to {to} with message: {message}")
     send_sms(to, message)
+    print("SMS sent successfully")
